@@ -1,117 +1,372 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amerika Mihretu - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>Amerika Mihretu | AI-Powered Full-Stack Developer</title>
+
+    <meta name="description" content="Portfolio of Amerika Mihretu, an AI-Powered Full-Stack Developer specializing in HTML, CSS, JavaScript, Python, FastAPI, PostgreSQL, and AI-powered web applications.">
+
+    <meta name="keywords" content="Amerika Mihretu, Portfolio, Full Stack Developer, AI Developer, FastAPI, Python, JavaScript, HTML, CSS, PostgreSQL">
+
+    <meta name="author" content="Amerika Mihretu">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
-        <nav id="navbar">
-            <div class="nav-container">
-                <h1 class="logo">Amerika Mihretu</h1>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-container">
-                <img src="profile.jpg" alt="Amerika Mihretu" class="profile-img">
-                <h1>Amerika Mihretu</h1>
-                <h2>Aspiring AI & Machine Learning Engineer</h2>
-                <p>Passionate about leveraging artificial intelligence and machine learning to solve real-world problems. Currently building skills in Python, data structures, and cutting-edge AI technologies.</p>
-                <a href="#projects" class="btn">View Projects</a>
-            </div>
-        </section>
+<!-- ================= HEADER ================= -->
 
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>I am an aspiring AI and Machine Learning Engineer based in Addis Ababa, Ethiopia. I am passionate about exploring the frontiers of artificial intelligence, from machine learning algorithms to deep learning models and generative AI. Through self-study and online courses, I have been building a strong foundation in Python programming, object-oriented programming, data structures and algorithms. I enjoy working on projects that apply these technologies to real-world problems, and I am excited to contribute to the growing field of AI.</p>
-            </div>
-        </section>
+<header>
+    <nav>
 
-        <section id="skills">
-            <div class="container">
-                <h2>Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill">Python</div>
-                    <div class="skill">Object-Oriented Programming</div>
-                    <div class="skill">Data Structures & Algorithms</div>
-                    <div class="skill">Machine Learning</div>
-                    <div class="skill">Deep Learning</div>
-                    <div class="skill">Generative AI</div>
-                    <div class="skill">Git & GitHub</div>
-                    <div class="skill">HTML</div>
-                    <div class="skill">CSS</div>
-                    <div class="skill">JavaScript</div>
-                </div>
-            </div>
-        </section>
+        <div class="logo">&lt;AmerikaMihretu /&gt;</div>
 
-        <section id="projects">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>Machine Learning Classification Model</h3>
-                        <p>Developed a classification model using scikit-learn to predict customer churn. Implemented data preprocessing, feature engineering, and model evaluation techniques.</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>Deep Learning Image Recognition</h3>
-                        <p>Built a convolutional neural network using TensorFlow/Keras for image classification. Trained on a dataset of handwritten digits with high accuracy.</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>Generative AI Chatbot</h3>
-                        <p>Created a simple chatbot using natural language processing techniques. Integrated with pre-trained models to generate responses based on user input.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <ul class="nav-links">
 
-        <section id="education">
-            <div class="container">
-                <h2>Education & Certifications</h2>
-                <div class="education-item">
-                    <h3>BSc in Information Systems</h3>
-                    <p>Addis Ababa University, Expected Graduation: 2028</p>
-                </div>
-                <div class="education-item">
-                    <h3>Machine Learning and AI Courses</h3>
-                    <p>Coursera - Completed courses on Machine Learning by Andrew Ng, Deep Learning Specialization, and various AI-related topics.</p>
-                </div>
-            </div>
-        </section>
+            <li><a href="#about">About</a></li>
 
-        <section id="contact">
-            <div class="container">
-                <h2>Contact</h2>
-                <div class="contact-info">
-                    <p><strong>Email:</strong> <a href="mailto:mihretuamerika@gmail.com">mihretuamerika@gmail.com</a></p>
-                    <p><strong>Location:</strong> Addis Ababa, Ethiopia</p>
-                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/amerika-mihretu/" target="_blank">linkedin.com/in/amerika-mihretu</a></p>
-                    <p><strong>GitHub:</strong> <a href="https://github.com/amerikamihretu" target="_blank">github.com/amerikamihretu</a></p>
-                </div>
-            </div>
-        </section>
-    </main>
+            <li><a href="#skills">Skills</a></li>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Amerika Mihretu. All rights reserved.</p>
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+            <li>
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    🌙
+                </button>
+            </li>
+
+        </ul>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+    </nav>
+</header>
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+    <!-- HERO -->
+
+    <section id="hero">
+
+        <div class="hero-content">
+
+            <img
+                src="images/profile.jpg"
+                alt="Amerika Mihretu"
+                class="profile-image"
+            >
+
+            <h1>
+                Hi, I'm
+                <span class="highlight">
+                    Amerika Mihretu
+                </span>
+            </h1>
+
+            <p class="hero-subtitle">
+                AI-Powered Full-Stack Developer
+            </p>
+
+            <p class="hero-description">
+
+                Passionate about building modern web applications with
+                HTML, CSS, JavaScript, Python, FastAPI, PostgreSQL,
+                and Artificial Intelligence.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn">
+                    View My Projects
+                </a>
+
+                <a href="resume.pdf" class="btn secondary-btn" download>
+                    Download Resume
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about-container">
+
+            <div class="about-text">
+
+                <p>
+
+                    Hello! I'm <strong>Amerika Mihretu</strong>, an Information
+                    Systems student with a strong passion for software
+                    development and Artificial Intelligence.
+
+                </p>
+
+                <p>
+
+                    I enjoy creating responsive websites, RESTful APIs,
+                    and practical web applications that solve real-world
+                    problems.
+
+                </p>
+
+                <p>
+
+                    I'm currently expanding my skills in FastAPI, React,
+                    PostgreSQL, and Generative AI while building projects
+                    that strengthen my full-stack development experience.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">HTML5</div>
+
+            <div class="skill-card">CSS3</div>
+
+            <div class="skill-card">JavaScript</div>
+
+            <div class="skill-card">Python</div>
+
+            <div class="skill-card">FastAPI</div>
+
+            <div class="skill-card">PostgreSQL</div>
+
+            <div class="skill-card">Git</div>
+
+            <div class="skill-card">GitHub</div>
+
+            <div class="skill-card">REST APIs</div>
+
+            <div class="skill-card">React (Learning)</div>
+
+            <div class="skill-card">Generative AI</div>
+
+            <div class="skill-card">Problem Solving</div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <h2>Featured Projects</h2>
+
+        <div class="projects-grid">
+
+            <!-- Calculator -->
+
+            <div class="project-card">
+
+                <img
+                    src="images/calculator.png"
+                    alt="Calculator App"
+                >
+
+                <h3>Calculator App</h3>
+
+                <p>
+
+                    A responsive calculator built using HTML, CSS,
+                    and JavaScript with keyboard support and
+                    a clean modern interface.
+
+                </p>
+
+                <div class="project-links">
+
+                    <a
+                        href="https://github.com/amerikamihretu/calculator-app"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        GitHub
+
+                    </a>
+
+                    <a
+                        href="https://calculator-app-amerika.netlify.app"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        Live Demo
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Todo -->
+
+            <div class="project-card">
+
+                <img
+                    src="images/todo.png"
+                    alt="Todo App"
+                >
+
+                <h3>Todo App</h3>
+
+                <p>
+
+                    A task management application featuring CRUD
+                    operations and persistent local storage.
+
+                </p>
+
+                <div class="project-links">
+
+                    <a
+                        href="https://github.com/amerikamihretu/todo-app"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        GitHub
+
+                    </a>
+
+                    <a
+                        href="https://todo-app-amerika.netlify.app"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        Live Demo
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Weather -->
+
+            <div class="project-card">
+
+                <img
+                    src="images/weather.png"
+                    alt="Weather Dashboard"
+                >
+
+                <h3>Weather Dashboard</h3>
+
+                <p>
+
+                    A weather dashboard that fetches real-time weather
+                    information using the OpenWeatherMap API.
+
+                </p>
+
+                <div class="project-links">
+
+                    <a
+                        href="https://github.com/amerikamihretu/weatherdashboard-app"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        GitHub
+
+                    </a>
+
+                    <a
+                        href="https://weatherdashboard-app-amerika.netlify.app"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        Live Demo
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <h2>Let's Connect</h2>
+
+        <div class="contact-links">
+
+           <a href="mailto:mihretuamerika@gmail.com?subject=Portfolio Contact">
+                📧 Email
+           </a>
+
+            <a
+                href="https://github.com/amerikamihretu"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                💻 GitHub
+
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/amerika-mihretu/"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                💼 LinkedIn
+
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+
+        © 2026 Amerika Mihretu.
+        Built with HTML, CSS & JavaScript.
+
+    </p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
