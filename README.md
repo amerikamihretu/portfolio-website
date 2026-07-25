@@ -6,7 +6,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 ## 🚀 Live Demo
 
-🔗 **Portfolio:** *Add your deployed portfolio URL here*
+🔗https://amerikamihretu.github.io/portfolio-website/
 
 ---
 
