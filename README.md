@@ -82,10 +82,8 @@ The purpose of this portfolio is to demonstrate my web development skills while 
 
 ## 📸 Screenshot
 
-Add a screenshot of your homepage here.
 
-```text
-screenshots/portfolio-homepage.png
+![Portfolio Homepage](screenshots/portfolio-homepage.png)
 ```
 
 ---
